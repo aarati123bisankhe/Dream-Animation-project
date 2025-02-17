@@ -683,6 +683,9 @@ function openMovieDetail(img) {
     }
 }
 
+
+
+
 function closeMovieDetail(movieId) {
     document.getElementById(movieId).style.display = "none";
 }
@@ -695,12 +698,14 @@ function playVideo(btn) {
     for (let key in movies) {
 
         if (movies[key].detailId === movieDetail.id) {
+            
             videoPlayer.src = movies[key].videoSrc;
             break;
         }
     }
 
     videoModal.style.display = "block";
+    videoPlayer.play(); // Automatically play the video
 }
 
 function closeVideo() {
@@ -723,6 +728,10 @@ function closeVideo() {
         });
        });
     </script>
+
+
+
+   
 
 
 
