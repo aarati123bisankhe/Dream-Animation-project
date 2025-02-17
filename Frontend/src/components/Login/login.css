@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hv;
+    background: #0e0d0d;
+}
+.wrapper{
+    position: relative;
+    width: 900px;
+    height: 550px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 60px rgba(0,0,0);
+    /* padding: 60px; */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper img{
+    width: 50%;
+    flex: 1; /* Image takes 1 portion of the available space */
+    max-width: 100%; /* Ensure the image scales properly */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 20px; /* Optional: round the edges */
+    /* position: absolute;
+    right: -109;
+    bottom: -84px;
+    width: 60;
+    transform: rotate(360deg); */
+}
+
+.form-wrapper {
+    /* z-index: 2; */
+    flex: 1; /* Form takes 1 portion of the available space */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #151313;
+}
+
+.wrapper.active .form-wrapper.login{
+    transition-delay: 0s;
+    transform: translate(-400px);
+}
+
+.wrapper .form-wrapper.register{
+    position: absolute;
+    margin-top: 15px;
+    transform: translate(-400px);
+    transition: .7s ease-in-out;
+}
+
+.wrapper.active .form-wrapper.register{
+    transition-delay: .7s;
+    transform: translateX(0);
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: #090909;
+
+}
+
+.input-box{
+    position: relative;
+    width: 300px;
+    margin: 40px;
+    
+
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #0b0a0a;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #090606;
+    padding: 0 20px 0 40px;
+}
+.input-box input::placeholder{
+    color: rgba(21, 17, 17, 0.3);
+}
+
+.input-box .icon{
+    position: absolute;
+    left: 15px;
+    color: #030303;
+    font-size: 1.2em;
+    line-height: 55px;
+}
+.forgot-pass{
+    margin: -15px 0 15px 15px;
+    /* text-align: left 20px; */
+    margin-left: 50px;
+}
+
+.forgot-pass a{
+    color: #0f0d0d;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+.forgot-pass a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 80%;
+    height: 45px;
+    background: #858dcb;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #090908;
+    font-weight: bold;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+button:hover {
+    backdrop-filter: #2e4d08;
+}
+
+.sign-link {
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.sign-link p{
+    color: #171515;
+}
+
+.sign-link p a:hover {
+    text-decoration: underline;
+}

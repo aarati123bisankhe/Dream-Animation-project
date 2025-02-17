@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: #ece5e5;
+}
+
+.wrapper {
+    background-color: #fff;
+    position: relative;
+    width: 900px;
+    height: 550px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.3); /* Added opacity to avoid solid black */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wrapper img {
+    width: 10px;
+    flex: 1;
+    /* max-width: 100%; */
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.form-wrapper {
+    flex: 1;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #151313;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #090909;
+}
+
+.input-box {
+    position: relative;
+    width: 320px;
+    margin: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #0b0a0a;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #090606;
+    padding: 0 20px;
+}
+
+.input-box input::placeholder {
+    color: rgba(21, 17, 17, 0.3);
+}
+
+.input-box .icon {
+    position: absolute;
+    left: 15px;
+    color: #030303;
+    font-size: 1.2em;
+    line-height: 55px;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    width: 70%;
+    height: 45px;
+    margin: auto;
+    background: #858dcb;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #090908;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background: #6b7fc9;
+}
+
+.sign-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.sign-link p {
+    margin: 0;
+    padding: 0;
+    color: #171515;
+}
+
+.sign-link p a {
+    color: #3143cd;
+    text-decoration: none;
+}
+
+.sign-link p a:hover {
+    text-decoration: underline;
+}

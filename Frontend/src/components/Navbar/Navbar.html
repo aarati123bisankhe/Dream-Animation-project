@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Navbar</title>
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    </head>
+    <body>
+            <div class="navbar">
+
+                <div class="search-container">
+                <form>
+                    <input type="search" placeholder="Search here ...">
+                    <i class="fa fa-search"></i>
+                </form>
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movie</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+
+
+                <div class="profile-container" id="profileIcon">
+                    <i class="fa-solid fa-user"></i>
+                     <!-- Dropdown Menu -->
+                       <div id="profileDropdown" class="dropdown">
+                        <!-- <a href="#">Setting & Privacy</a> -->
+                        <a href="#">Logout</a>
+                       </div>
+                </div>
+                <!-- <i class="fa-solid fa-user"></i> -->
+            </div>
+        </div>
+        
+         <!-- Inline JavaScript to toggle dropdown -->
+         <script>
+            document.getElementById("profileIcon").addEventListener("click", function () {
+                // Toggle 'active' class to show/hide dropdown
+                document.querySelector(".profile-container").classList.toggle("active");
+            });
+
+        </script>
+    </body>
+</html>

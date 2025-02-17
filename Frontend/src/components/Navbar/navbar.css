@@ -1,0 +1,159 @@
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(230, 224, 224);
+}
+
+/* Navbar Styling */
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: -1px;
+    border-radius: 9px;
+    padding: 10px 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Menu (Home, Movies, About) */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make menu items horizontal */
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar ul li {
+    margin-right: 40px; /* Space between menu items */
+}
+
+.navbar ul li a {
+    color: rgb(9, 11, 74);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Profile Icon */
+.navbar i {
+    color: rgb(6, 6, 6);
+    font-size: 23px;
+    margin-left: 10px; /* Space between menu and icon */
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    color: rgb(9, 147, 233);
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    /* margin-left: 1%; */
+}
+
+.dropdown {
+    position: absolute;
+    right: 0;
+    top: 40px; /* Position below the profile icon */
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    display: none; 
+}
+
+.dropdown a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown when profile-container is active */
+.profile-container.active .dropdown {
+    display: flex;
+}
+
+
+/* Search Form */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 45px; 
+}
+
+.search-container form {
+    position: relative;
+    width: 35px;
+    height: 34px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 2px;
+    box-sizing: border-box;
+    transition: width 0.5s ease;
+   
+    
+}
+
+.search-container input {  
+    width: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    transition: width 0.5s ease;
+}
+
+.search-container .fa {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    padding: 4px;
+    width: 20px;
+    height: 23px;
+    border-radius: 26px;
+    font-size: 1.3em;
+    text-align: center;
+    transform: translateY(-0%); /* Center vertically */
+    cursor: pointer;
+    color: #8147f5;
+    margin-top: -1px;
+}
+
+/* Expand on hover */
+.search-container:hover form {
+    width: 210px;
+    
+}
+
+.search-container:hover input {
+    width: 150px;
+    padding: 10px;
+}
+
+form:hover .fa{
+    background-color: #8147f5;
+    color: white;
+}
+
