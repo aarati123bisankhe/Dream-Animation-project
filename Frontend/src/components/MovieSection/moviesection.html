@@ -655,7 +655,6 @@
 
 
 
-
     <script>
        const images = document.querySelectorAll(".movie-track img");
        const movies = {
@@ -685,31 +684,9 @@ function openMovieDetail(img) {
     }
 }
 
-
-
-
 function closeMovieDetail(movieId) {
     document.getElementById(movieId).style.display = "none";
 }
-
-// function playVideo(btn) {
-//     const movieDetail = btn.closest(".modal");
-//     const videoModal = document.getElementById("videoModal");
-//     const videoPlayer = document.getElementById("movieVideo");
-
-//     for (let key in movies) {
-
-//         if (movies[key].detailId === movieDetail.id) {
-            
-//             videoPlayer.src = movies[key].videoSrc;
-//             break;
-//         }
-//     }
-
-//     videoModal.style.display = "block";
-//     videoPlayer.play(); // Automatically play the video
-// }
-
 
 function playVideo(btn) {
     const movieDetail = btn.closest(".modal");
@@ -729,12 +706,10 @@ function playVideo(btn) {
         }
     }
 
-    // Display the video modal and play the video
     videoModal.style.display = "block";
-    videoPlayer.play(); // Automatically play the video
+    videoPlayer.play();
 
-    // Bring the current movie modal to the front
-    movieDetail.style.zIndex = "1"; // Bring the clicked movie modal to the front
+    movieDetail.style.zIndex = "0";
 }
 
 
