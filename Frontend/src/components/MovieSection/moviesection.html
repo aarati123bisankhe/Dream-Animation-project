@@ -97,6 +97,7 @@
      <div id="movie2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeMovieDetail('movie2')">&times;</span>
+
             
             <div class="modal-container">
                 <div class="poster">
@@ -674,6 +675,7 @@
     "Movie14": { detailId: "movie14", videoSrc: "/Frontend/src/assets/Video/section14.mp4" },
     "Movie15": { detailId: "movie15", videoSrc: "/Frontend/src/assets/Video/section15.mp4" },
     "Movie16": { detailId: "movie16", videoSrc: "/Frontend/src/assets/Video/section16.mp4" }
+
 };
 
 function openMovieDetail(img) {
@@ -690,23 +692,51 @@ function closeMovieDetail(movieId) {
     document.getElementById(movieId).style.display = "none";
 }
 
+// function playVideo(btn) {
+//     const movieDetail = btn.closest(".modal");
+//     const videoModal = document.getElementById("videoModal");
+//     const videoPlayer = document.getElementById("movieVideo");
+
+//     for (let key in movies) {
+
+//         if (movies[key].detailId === movieDetail.id) {
+            
+//             videoPlayer.src = movies[key].videoSrc;
+//             break;
+//         }
+//     }
+
+//     videoModal.style.display = "block";
+//     videoPlayer.play(); // Automatically play the video
+// }
+
+
 function playVideo(btn) {
     const movieDetail = btn.closest(".modal");
     const videoModal = document.getElementById("videoModal");
     const videoPlayer = document.getElementById("movieVideo");
 
-    for (let key in movies) {
+    const allMovies = document.querySelectorAll(".modal");
+    allMovies.forEach((modal) => {
+        modal.style.zIndex = "100";
+    });
 
+
+    for (let key in movies) {
         if (movies[key].detailId === movieDetail.id) {
-            
             videoPlayer.src = movies[key].videoSrc;
             break;
         }
     }
 
+    // Display the video modal and play the video
     videoModal.style.display = "block";
     videoPlayer.play(); // Automatically play the video
+
+    // Bring the current movie modal to the front
+    movieDetail.style.zIndex = "1"; // Bring the clicked movie modal to the front
 }
+
 
 function closeVideo() {
     const videoModal = document.getElementById("videoModal");
@@ -730,12 +760,6 @@ function closeVideo() {
     </script>
 
 
-
-   
-
-
-
-
-
+    
 </body>
 </html>
