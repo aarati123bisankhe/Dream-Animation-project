@@ -12,9 +12,9 @@ body {
 }
 
 .title {
-    font-size: 32px;
+    font-size: 33px;
     font-weight: bold;
-    color: #210f85;
+    color: #191048;
     margin-bottom: 10px;
 }
 
@@ -22,15 +22,15 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
-    color: black;
+    color: rgb(7, 14, 198);
     margin-bottom: 20px;
 }
 
 .nav-menu a {
     text-decoration: none;
-    color: black;
+    color: rgb(7, 32, 134);
 }
 
 .nav-menu a:hover {
