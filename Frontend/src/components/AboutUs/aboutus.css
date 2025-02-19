@@ -1,7 +1,7 @@
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #dad7e1;
+    background-color: #4d4a56;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -12,16 +12,16 @@ body {
 }
 
 .title {
-    font-size: 33px;
+    font-size: 36px;
     font-weight: bold;
-    color: #191048;
+    color: #07031c;
     margin-bottom: 10px;
 }
 
 .nav-menu {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     font-size: 19px;
     font-weight: bold;
     color: rgb(7, 14, 198);
@@ -30,7 +30,7 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: rgb(7, 32, 134);
+    color: rgb(4, 17, 92);
 }
 
 .nav-menu a:hover {
@@ -39,20 +39,20 @@ body {
 
 .image-grid {
     display: flex;
-    gap: 5%;
-    width: 900px; 
-    margin-left: 85%;
+    gap: 10%;
+    width: 950px; 
+    margin-left: 110%;
     margin-top: 5%;
     justify-content: center;
 }
 
 .image-container {
     position: relative;
-    width: 700px;
+    width: 750px;
 }
 
 .image-container img {
-    width: 700px;
+    width: 750px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
 }
@@ -62,10 +62,16 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
     color: white;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.description {
+    font-size: 16px;
+    color: #040f13; /* Adjust color */
+
 }
