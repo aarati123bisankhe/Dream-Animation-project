@@ -4,10 +4,12 @@ import Navbar from "./components/Navbar/Navbar";
 import RegistrationForm from "./components/Registration/Registration";
 import SignUp from "./components/Signup/Signup";
 
+import Home from "./components/Home page/Home";
+
 
 function App() {
   return (
-      <Navbar/>
+    <Home/>
     );
 }
 
