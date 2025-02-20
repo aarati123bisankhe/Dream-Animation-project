@@ -27,7 +27,7 @@ body {
 
 .slider {
     touch-action: none; /* Disable touch gestures like swipe */
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden; 
 }
 
 .list{
@@ -45,24 +45,22 @@ body {
 
 
 video{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 150%;
     height: 100%;
     object-fit: cover;
-    /* min-width: 150%;
-    min-height: 100%; */
     object-position: center; /* Centers the video */
-    z-index: -1; /* Push the video behind content */
+      /* video behind content */
 
 }
 
 
 .content{
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 25%;
+    left: 17%;
     /* width: 1140px; */
     transform: translate(-50%);
     color: white;
@@ -73,26 +71,30 @@ video{
 .topic{
     font-size: 1rem;
     margin-bottom: 20px;
+    margin-left: -40%;
+    color: #d3cbd9;
 }
 
 .desc{
     font-size: 1rem;
     margin-bottom: 30px;
-    display: grid
+    display: grid;
+    margin-left: -3%;
 
 }
 
 .title{
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3em;
     list-style: 1.3em;
-    color: rgb(106, 72, 8);
+    color: rgb(101, 67, 4);
+    margin-left: -5%;
 }
 
 .buttons{
     display: inline-block;
     margin-top: 0px; 
-    width: 100px;
+    width: 140px;
     height: 40px;
     padding: 5px;
     font-size: 12px;
@@ -100,22 +102,22 @@ video{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 0px; 
+    margin-left: -290px; 
+    text-align: center; 
 }
 
 .buttons button:hover {
-    background-color: rgb(171, 168, 208);
+    background-color: rgb(161, 156, 219);
 }
 
 /* arrow */
 .arrows{
     position: absolute;
     top: 80%;
-    right: 52%;
-    width: 300px;
-    max-width: 30%;
+    right: 70%;
+    width: 100px;
     display: flex;
-    gap: 10px;
+    gap: 2px;
     align-items: center;
 }
 
@@ -147,6 +149,7 @@ video{
     z-index: 1;
     display: flex;
     gap: 15px;
+
     
 }
 
