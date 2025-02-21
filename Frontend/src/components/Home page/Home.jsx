@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import './home.css';
+// import Navbar from '../Navbar/Navbar';
+import Navbar from '../Navbar/Navbar.jsx';
 
 const Home = () => {
   const toggleMovieDetails = (movieId) => {
@@ -105,6 +107,9 @@ const Home = () => {
 
 
   return (
+    <>
+
+    <Navbar/>
 
     <div className="slider">
         <div className="list">
@@ -128,7 +133,7 @@ const Home = () => {
             {/* Movie 1 Details */}
             <div id="movie1" className="movie-details">
               <div className="movie-poster">
-                <img src="\src\assets\images\image11.png" alt="Movie 1 poster" />
+                <img src="\src\assets\images\poster1.jpg" alt="Movie 1 poster" />
               </div>
               <div className="movie-info">
                 <h1 className="movie-title">The Bad Guys 2</h1>
@@ -525,6 +530,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

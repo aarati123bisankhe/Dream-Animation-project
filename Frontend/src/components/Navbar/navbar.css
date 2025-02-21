@@ -8,7 +8,8 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    position: absolute;
+    display: flex;
+    position: fixed;
     top: 10px;
     right: -1px;
     border-radius: 9px;
@@ -17,10 +18,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000;
 }
 
 /* Navbar Menu (Home, Movies, About) */
 .navbar ul {
+    
     list-style: none;
     margin: 0;
     padding: 0;
@@ -34,7 +37,8 @@ body {
 }
 
 .navbar ul li a {
-    color: rgb(9, 11, 74);
+    /* color: rgb(9, 11, 74); */
+    color: #8147f5;
     text-decoration: none;
     font-size: 18px;
 }
@@ -43,22 +47,22 @@ body {
 .navbar i {
     color: rgb(6, 6, 6);
     font-size: 23px;
-    margin-left: 10px; /* Space between menu and icon */
+    margin-left: 10px;
     cursor: pointer;
 }
 
 .navbar a:hover{
-    color: rgb(9, 147, 233);
+    color: rgb(255, 255, 255);
 }
 
 .profile-container{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
     margin: 5px 0;
-    /* margin-left: 1%; */
+    
 }
+
 
 .dropdown {
     position: absolute;
@@ -67,10 +71,10 @@ body {
     background: white;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 150px;
+    width: 130px;
     display: flex;
     flex-direction: column;
-    display: none; 
+    /* display: none;  */
 }
 
 .dropdown a {
@@ -85,7 +89,6 @@ body {
     background-color: #ddd;
 }
 
-/* Show dropdown when profile-container is active */
 .profile-container.active .dropdown {
     display: flex;
 }
@@ -105,7 +108,7 @@ body {
     height: 34px;
     background-color: white;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 2px solid #8147f5;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -132,7 +135,7 @@ body {
     padding: 4px;
     width: 20px;
     height: 23px;
-    border-radius: 26px;
+    border-radius: 24px;
     font-size: 1.3em;
     text-align: center;
     transform: translateY(-0%); /* Center vertically */
@@ -141,7 +144,7 @@ body {
     margin-top: -1px;
 }
 
-/* Expand on hover */
+
 .search-container:hover form {
     width: 210px;
     

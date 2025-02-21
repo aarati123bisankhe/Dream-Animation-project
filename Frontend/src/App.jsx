@@ -8,7 +8,13 @@ import Home from "./components/Home page/Home";
 
 function App() {
   return (
+    <>
+    <Navbar/>
+
     <Home/>
+    {/* <Aboutus/> */}
+
+    </>
     );
 }
 

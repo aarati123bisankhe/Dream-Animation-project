@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './navbar.css'; // Make sure the CSS file path is correct
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
+import Aboutus from '../AboutUs/Aboutus';
 
 const Navbar = () => {
     const [isDropdownActive, setDropdownActive] = useState(false);
