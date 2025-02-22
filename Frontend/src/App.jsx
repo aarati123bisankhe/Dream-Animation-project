@@ -5,14 +5,16 @@ import RegistrationForm from "./components/Registration/Registration";
 import SignUp from "./components/Signup/Signup";
 import Aboutus from "./components/AboutUs/Aboutus";
 import Home from "./components/Home page/Home";
+import MovieSection from "./components/MovieSection/MovieSection";
 
 function App() {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/>
 
-    <Home/>
+    <Home/> */}
     {/* <Aboutus/> */}
+    <MovieSection/>
 
     </>
     );

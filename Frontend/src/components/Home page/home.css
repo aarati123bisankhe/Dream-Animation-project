@@ -151,14 +151,11 @@ button {
     transform: translateX(-50%);
     z-index: 1;
     display: flex;
-    gap: 15px;
-
-    
+    gap: 15px; 
 }
 
 
 .thumbnail .item {
-    
     width: 10px;
     height: 220px;
     flex-shrink: 0;
@@ -217,10 +214,6 @@ button {
     filter: blur(0);
 }
 
-
- 
-
-
 .slider.next .list .item:nth-child(1) video {
     width: 150%;
     height: 220px;
@@ -242,8 +235,10 @@ button {
     
 }
 
+
 .silder.next .thumbnail .item:nth-child(1) {
     overflow: hidden;
+    opacity: 0;
     animation: showThumbnail 0.5s linear 1 forwards;
 }
 
@@ -274,17 +269,19 @@ button {
 
 .slider.prev .thumbnail {
     animation: effectprev 0.5s linear 1 forwards;
+
+
 }
 
 .slider.prev .list .item:nth-child(2){
     z-index: 2;
 }
 
-.slider.prev .list .item:nth-child(2) image {
+.slider.prev .list .item:nth-child(2) img {
     position : absolute;
     bottom: 0;
     left: 0;
-    animation: outframe 0.5s linear 1 forwards
+    animation: outframe 0.5s linear 1 forwards;
 }
 
 @keyframes outframe {
@@ -299,9 +296,9 @@ button {
 
 
 .slider.prev .thumbnail .item:nth-child(1){
-    overflow: hidden;
-    opacity: 0;
-    animation: showThumbnail .5s linear 1 forwards;
+    overflow: hidden; 
+    opacity: 1;
+    animation: showThumbnail 0.5s linear 1 forwards;
 }
 
 .slider.next .arrows .button,
@@ -325,7 +322,7 @@ button {
     to{
         transform: translateY(-150px);
         filter: blur(20px);
-        opacity: 0;
+        opacity: 1;
     }
     
 }

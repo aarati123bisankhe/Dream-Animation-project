@@ -1,21 +1,25 @@
 body{
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #fff !important;
 }
 
 h1 {
     color: #142175;
     font-weight: bold;
     text-align: left; 
-    margin-left: 1%; 
-    margin-top: 3%;
+    margin-left: -130%; 
+    margin-top: -340px;
+    
+    
 }
 
 .slider-container {
-
     position: absolute;
     width: 50%;
     margin: auto;
+    margin-top: 25px;
+    margin-left: -36%;
 
 }
 
