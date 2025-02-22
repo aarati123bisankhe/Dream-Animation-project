@@ -424,6 +424,302 @@ const MovieSection = () => {
     </div>
 
 
+
+
+    {/* <!-- Movie9 Detail Modal --> */}
+    <div id="movie9" class="modal">
+        <div class="modal-content">
+            <span class="close" onClick={() => closeMovieDetail("movie9")}>&times;</span>
+            
+            <div class="modal-container">
+
+                <div class="poster">
+                    <img id="moviePoster" src="\src\assets\images\sectionpo9.png" alt="Movie9 Poster"/>
+                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                </div>
+
+                <div class="Movie-detail">
+                    <h2 id="movieTitle">Migration (2023)</h2>
+                    <p id="movieDescription">A family of ducks try to convince their overprotective father to go on the vacation of a lifetime.</p>
+                        <p><strong>Genres:</strong> <span id="movieGenres">Animation, Comedy, Animal Adventure, Family</span></p>
+                        <p><strong>Writers:</strong> <span id="movieWriters"></span>Mike White, Benjamin Renner, Ken Daurio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {/* <!-- Video Player Modal --> */}
+    <div id="videoModal" class="modal">
+        <div class="modal-content video-modal">
+            <span class="close" onClick={closeVideo}>&times;</span>
+            <video id="movieVideo" controls>
+                <source src="\src\assets\Video\section9.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+
+    {/* <!-- Movie10 Detail Modal --> */}
+    <div id="movie10" class="modal">
+        <div class="modal-content">
+            <span class="close" onClick={() => closeMovieDetail("movie10")}>&times;</span>
+            
+            <div class="modal-container">
+
+                <div class="poster">
+                    <img id="moviePoster" src="\src\assets\images\sectionpo10.png" alt="Movie10 Poster"/>
+                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                </div>
+
+                <div class="Movie-detail">
+                    <h2 id="movieTitle">The Croods: A New Age (2020)</h2>
+                    <p id="movieDescription">The prehistoric family the Croods are challenged by a rival family
+                         the Bettermans, who claim to be better and more evolved.</p>
+                        <p><strong>Genres:</strong> <span id="movieGenres">Animation, Comedy, Animal Adventure, Family</span></p>
+                        <p><strong>Writers:</strong> <span id="movieWriters"></span>Kevin Hageman, Dan Hageman, Paul Fisher</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {/* <!-- Video Player Modal --> */}
+    <div id="videoModal" class="modal">
+        <div class="modal-content video-modal">
+            <span class="close" onClick={closeVideo}>&times;</span>
+            <video id="movieVideo" controls>
+                <source src="\src\assets\Video\section10.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+
+    {/* <!-- Movie11 Detail Modal --> */}
+    <div id="movie11" class="modal">
+        <div class="modal-content">
+            <span class="close" onClick={() => closeMovieDetail("movie11")}>&times;</span>
+            
+            <div class="modal-container">
+
+                <div class="poster">
+                    <img id="moviePoster" src="\src\assets\images\sectionpo11.png" alt="Movie11 Poster"/>
+                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                </div>
+
+                <div class="Movie-detail">
+                    <h2 id="movieTitle">Guillermo del Toro's Pinocchio (2022)</h2>
+                    <p id="movieDescription">A father's wish magically brings a wooden boy to life in Italy, giving him a chance 
+                        to care for the child.</p>
+                        <p><strong>Genres:</strong> <span id="movieGenres">Animation, Fairy Tale, Dark Fantasy, Drama</span></p>
+                        <p><strong>Writers:</strong> <span id="movieWriters"></span>Guillermo del Toro, Patrick McHale, Carlo Collodi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {/* <!-- Video Player Modal --> */}
+    <div id="videoModal" class="modal">
+        <div class="modal-content video-modal">
+            <span class="close" onClick={closeVideo}>&times;</span>
+            <video id="movieVideo" controls>
+                <source src="\src\assets\Video\section11.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+
+
+
+    {/* <!-- Movie12 Detail Modal --> */}
+    <div id="movie12" class="modal">
+        <div class="modal-content">
+            <span class="close" onClick={() => closeMovieDetail("movie12")}>&times;</span>
+            
+            <div class="modal-container">
+
+                <div class="poster">
+                    <img id="moviePoster" src="\src\assets\images\sectionpo12.png" alt="Movie12 Poster"/>
+                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                </div>
+
+                <div class="Movie-detail">
+                    <h2 id="movieTitle">Rango (2011)</h2>
+                    <p id="movieDescription">Rango is an ordinary chameleon who accidentally winds up in the town of Dirt, a 
+                        lawless outpost in the Wild West in desperate need of a new sheriff.</p>
+                        <p><strong>Genres:</strong> <span id="movieGenres">Animation Epic, Desert Adventure, Action, Quirky Comedy</span></p>
+                        <p><strong>Writers:</strong> <span id="movieWriters"></span>John Logan, Gore Verbinski, James Ward Byrkit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {/* <!-- Video Player Modal --> */}
+    <div id="videoModal" class="modal">
+        <div class="modal-content video-modal">
+            <span class="close" onClick={closeVideo}>&times;</span>
+            <video id="movieVideo" controls>
+                <source src="\src\assets\Video\section12.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+
+    {/* <!-- Movie13 Detail Modal --> */}
+    <div id="movie13" class="modal">
+        <div class="modal-content">
+            <span class="close" onClick={() => closeMovieDetail("movie13")}>&times;</span>
+            
+            <div class="modal-container">
+
+                <div class="poster">
+                    <img id="moviePoster" src="\src\assets\images\sectionpo13.png" alt="Movie13 Poster"/>
+                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                </div>
+
+                <div class="Movie-detail">
+                    <h2 id="movieTitle">The sea Beast (2022)</h2>
+                    <p id="movieDescription">When a young girl stows away on the ship of a legendary sea monster hunter, they launch an 
+                        epic journey into uncharted waters - and make history to boot.</p>
+                        <p><strong>Genres:</strong> <span id="movieGenres">Animation, Sea Adventure, Action, Comedy</span></p>
+                        <p><strong>Writers:</strong> <span id="movieWriters"></span>Chris Williams, Nell Benjamin, Sam Stratton</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {/* <!-- Video Player Modal --> */}
+    <div id="videoModal" class="modal">
+        <div class="modal-content video-modal">
+            <span class="close" onClick={closeVideo}>&times;</span>
+            <video id="movieVideo" controls>
+                <source src="\src\assets\Video\section13.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+
+
+    {/* <!-- Movie14 Detail Modal --> */}
+    <div id="movie14" class="modal">
+        <div class="modal-content">
+            <span class="close" onClick={() => closeMovieDetail("movie14")}>&times;</span>
+            
+            <div class="modal-container">
+
+                <div class="poster">
+                    <img id="moviePoster" src="\src\assets\images\sectionpo14.png" alt="Movie14 Poster"/>
+                    <button class="play-btn"  onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                </div>
+
+                <div class="Movie-detail">
+                    <h2 id="movieTitle">Rio (2011)</h2>
+                    <p id="movieDescription">When Blu, a domesticated macaw from small-town Minnesota, meets the fiercely 
+                        independent Jewel, he takes off on an adventure to Rio de Janeiro with the bird of his dreams.</p>
+                        <p><strong>Genres:</strong> <span id="movieGenres">Animation, Adventure, Action, Family</span></p>
+                        <p><strong>Writers:</strong> <span id="movieWriters"></span>Carlo Saldanha, Earl Rischey Jones, Todd R. Jones</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {/* <!-- Video Player Modal --> */}
+    <div id="videoModal" class="modal">
+        <div class="modal-content video-modal">
+            <span class="close" onClick={closeVideo}>&times;</span>
+            <video id="movieVideo" controls>
+                <source src="\src\assets\Video\section14.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+
+
+
+
+    {/* <!-- Movie15 Detail Modal --> */}
+    <div id="movie15" class="modal">
+        <div class="modal-content">
+            <span class="close"onClick={() => closeMovieDetail("movie15")}>&times;</span>
+            
+            <div class="modal-container">
+
+                <div class="poster">
+                    <img id="moviePoster" src="\src\assets\images\sectionpo15.png" alt="Movie15 Poster"/>
+                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                </div>
+
+                <div class="Movie-detail">
+                    <h2 id="movieTitle">Ice Age: Continental Drift (2012)</h2>
+                    <p id="movieDescription">Manny, Diego, and Sid embark upon another adventure after their continent is set adrift.
+                         Using an iceberg as a ship, they encounter sea creatures and battle pirates as they explore a new world.</p>
+                        <p><strong>Genres:</strong> <span id="movieGenres">Animation, Adventure, Comedy, Family</span></p>
+                        <p><strong>Writers:</strong> <span id="movieWriters"></span>Carlo Saldanha, Earl Rischey Jones, Todd R. Jones</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {/* <!-- Video Player Modal --> */}
+    <div id="videoModal" class="modal">
+        <div class="modal-content video-modal">
+            <span class="close" onClick={closeVideo}>&times;</span>
+            <video id="movieVideo" controls>
+                <source src="\src\assets\Video\section15.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+
+
+
+     {/* <!-- Movie16 Detail Modal --> */}
+     <div id="movie16" class="modal">
+        <div class="modal-content">
+            <span class="close" onClick={() => closeMovieDetail("movie16")}>&times;</span>
+            
+            <div class="modal-container">
+
+                <div class="poster">
+                    <img id="moviePoster" src="\src\assets\images\sectionpo16.png" alt="Movie16 Poster"/>
+                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                </div>
+
+                <div class="Movie-detail">
+                    <h2 id="movieTitle">Turbo (2013)</h2>
+                    <p id="movieDescription">A freak accident might just help an everyday garden snail achieve his biggest
+                         dream: winning the Indy 500.</p>
+                        <p><strong>Genres:</strong> <span id="movieGenres">Animation, Adventure, Motorsport, Sport</span></p>
+                        <p><strong>Writers:</strong> <span id="movieWriters"></span>David Soren, Darren Lemka, Robert Siegel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {/* <!-- Video Player Modal --> */}
+    <div id="videoModal" class="modal">
+        <div class="modal-content video-modal">
+            <span class="close" onClick={closeVideo}>&times;</span>
+            <video id="movieVideo" controls>
+                <source src="\src\assets\Video\section16.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
       
 
 
