@@ -71,7 +71,7 @@ body {
     margin: 20px auto;  /* Center the container with margin */
     width: 80%;  /* Adjust the width to a smaller size */
     margin-top: 2px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 /* .checkbox-container {
@@ -112,6 +112,7 @@ body {
     font-size: 0.9em;
     margin-bottom: 8px;
     color: #0f0e0e;
+    margin-left: -300px;
 }
 
 .input-container input {
@@ -190,23 +191,6 @@ button.signup-btn {
 /* button.signup-btn:hover {
     background:white
 } */
-
-/* Legal Section */
-.copy.legal {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 0.8em;
-    color: #0f0f0f;
-}
-
-.copy.legal a {
-    color: #2a25c6;
-    text-decoration: none;
-}
-
-.copy.legal a:hover {
-    text-decoration: underline;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {

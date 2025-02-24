@@ -128,7 +128,7 @@ const Home = () => {
               by an all-female squad of criminals.
             </div>
             <div className="buttons">
-              <button onClick={() => toggleMovieDetails('movie1')}>SEE MORE</button>
+              <buttonn onClick={() => toggleMovieDetails('movie1')}>SEE MORE</buttonn>
             </div>
             {/* Movie 1 Details */}
             <div id="movie1" className="movie-details">
@@ -193,7 +193,7 @@ const Home = () => {
               becomes a friend of a young dragon.
             </div>
             <div className="buttons">
-              <button onClick={() => toggleMovieDetails('movie2')}>SEE MORE</button>
+              <buttonn onClick={() => toggleMovieDetails('movie2')}>SEE MORE</buttonn>
             </div>
             {/* Movie 2 Details */}
             <div id="movie2" className="movie-details">
@@ -259,7 +259,7 @@ const Home = () => {
               truly meant to be.
             </div>
             <div className="buttons">
-              <button onClick={() => toggleMovieDetails('movie3')}>SEE MORE</button>
+              <buttonn onClick={() => toggleMovieDetails('movie3')}>SEE MORE</buttonn>
             </div>
             {/* Movie 3 Details */}
             <div id="movie3" className="movie-details">
@@ -324,7 +324,7 @@ const Home = () => {
               he doggedly pursues the feline supervillain Petey the Cat.
             </div>
             <div className="buttons">
-              <button onClick={() => toggleMovieDetails('movie4')}>SEE MORE</button>
+              <buttonn onClick={() => toggleMovieDetails('movie4')}>SEE MORE</buttonn>
             </div>
             {/* Movie 4 Details */}
             <div id="movie4" className="movie-details">
@@ -391,7 +391,7 @@ const Home = () => {
               odds.
             </div>
             <div className="buttons">
-              <button onClick={() => toggleMovieDetails('movie5')}>SEE MORE</button>
+              <buttonn onClick={() => toggleMovieDetails('movie5')}>SEE MORE</buttonn>
             </div>
             {/* Movie 5 Details */}
             <div id="movie5" className="movie-details">
@@ -447,7 +447,7 @@ const Home = () => {
               war between kingdoms. Aided by allies, he must solve the mystery before hostilities escalate.
             </div>
             <div className="buttons">
-              <button onClick={() => toggleMovieDetails('movie6')}>SEE MORE</button>
+              <buttonn onClick={() => toggleMovieDetails('movie6')}>SEE MORE</buttonn>
             </div>
             {/* Movie 6 Details */}
             <div id="movie6" className="movie-details">

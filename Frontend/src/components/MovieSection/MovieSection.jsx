@@ -138,10 +138,10 @@ const MovieSection = () => {
           <div className="modal-container">
             <div className="poster">
               <img id="moviePoster" src="\src\assets\images\sectionpo1.png" alt="Movie1 Poster"/>
-              <button className="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+              <buttons className="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
             </div>
             <div className="Movie-detail">
-              <h2 id="movieTitle">The wild Robort (2024)</h2>
+              <h3 id="movieTitle">The wild Robort (2024)</h3>
               <p id="movieDescription">
                 After a shipwreck, an intelligent robot called Roz is stranded on an uninhabited island. 
                 To survive the harsh environment, Roz bonds with the island's animals and cares for an orphaned baby goose.
@@ -174,10 +174,10 @@ const MovieSection = () => {
        <div className="modal-container">
          <div className="poster">
         <img id="moviePoster" src="\src\assets\images\sectionpo2.png" alt="Movie2 Poster" />
-        <button className="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+        <buttons className="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
       </div>
        <div className="Movie-detail">
-        <h2 id="movieTitle">Raya and the Last Dragon (2021)</h2>
+        <h3 id="movieTitle">Raya and the Last Dragon (2021)</h3>
         <p id="movieDescription">
           In a realm known as Kumandra, a re-imagined Earth inhabited by an ancient civilization, a warrior named Raya is determined to find the last dragon.
         </p>
@@ -210,11 +210,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo3.png" alt="Movie3 Poster" />
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">Klaus (2019)</h2>
+                    <h3 id="movieTitle">Klaus (2019)</h3>
                     <p id="movieDescription">When Smeerensburg's new postman, Jesper, befriends toymaker Klaus,
                          their gifts melt an age-old feud and deliver a sleigh full of holiday traditions.</p>
                         <p><strong>Genres:</strong> <span id="movieGenres">Holiday Animation, Holiday Comedy, Animation, Family</span></p>
@@ -248,11 +248,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo4.png" alt="Movie4 Poster" />
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">WALL-E (2008)</h2>
+                    <h3 id="movieTitle">WALL-E (2008)</h3>
                     <p id="movieDescription">A robot who is responsible for cleaning a waste-covered Earth meets 
                         another robot and falls in love with her. Together, they set out on a journey that will alter 
                         the fate of mankind.</p>
@@ -286,11 +286,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo5.png" alt="Movie5 Poster" />
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">Monster House (2006)</h2>
+                    <h3 id="movieTitle">Monster House (2006)</h3>
                     <p id="movieDescription">Three teens discover that their neighbor's house is
                          really a living, breathing, scary monster.</p>      
                         <p><strong>Genres:</strong> <span id="movieGenres">Animation, Slapstick, Mystery, Family</span></p>
@@ -323,11 +323,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo6.png" alt="Movie6 Poster"/>
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">Kung Fu Panda 4 (2024)</h2>
+                    <h3 id="movieTitle">Kung Fu Panda 4 (2024)</h3>
                     <p id="movieDescription">Po kicked butt as the Dragon Warrior, and he thinks he may 
                         have found his successor if they can defeat a new villain with shapeshifting powers.</p>      
                         <p><strong>Genres:</strong> <span id="movieGenres">Animation, Action, Animation, Family</span></p>
@@ -359,11 +359,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo7.png" alt="Movie7 Poster"/>
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">Spider-Man: Into the Spider-Verse (2018)</h2>
+                    <h3 id="movieTitle">Spider-Man: Into the Spider-Verse (2018)</h3>
                     <p id="movieDescription">Teen Miles Morales becomes the Spider-Man of his universe 
                         and must join with five spider-powered individuals from other dimensions to stop a threat for all 
                         realities.</p>
@@ -397,11 +397,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo8.png" alt="Movie8 Poster"/>
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">The Monkey King (2023)</h2>
+                    <h3 id="movieTitle">The Monkey King (2023)</h3>
                     <p id="movieDescription">Inspired by an epic Chinese tale, translated into an action-packed comedy, a Monkey
                          and his magical fighting Stick battle demons, dragons, gods and the greatest 
                          adversary of all - Monkey's ego.</p>
@@ -435,11 +435,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo9.png" alt="Movie9 Poster"/>
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">Migration (2023)</h2>
+                    <h3 id="movieTitle">Migration (2023)</h3>
                     <p id="movieDescription">A family of ducks try to convince their overprotective father to go on the vacation of a lifetime.</p>
                         <p><strong>Genres:</strong> <span id="movieGenres">Animation, Comedy, Animal Adventure, Family</span></p>
                         <p><strong>Writers:</strong> <span id="movieWriters"></span>Mike White, Benjamin Renner, Ken Daurio</p>
@@ -470,11 +470,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo10.png" alt="Movie10 Poster"/>
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">The Croods: A New Age (2020)</h2>
+                    <h3 id="movieTitle">The Croods: A New Age (2020)</h3>
                     <p id="movieDescription">The prehistoric family the Croods are challenged by a rival family
                          the Bettermans, who claim to be better and more evolved.</p>
                         <p><strong>Genres:</strong> <span id="movieGenres">Animation, Comedy, Animal Adventure, Family</span></p>
@@ -506,11 +506,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo11.png" alt="Movie11 Poster"/>
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">Guillermo del Toro's Pinocchio (2022)</h2>
+                    <h3 id="movieTitle">Guillermo del Toro's Pinocchio (2022)</h3>
                     <p id="movieDescription">A father's wish magically brings a wooden boy to life in Italy, giving him a chance 
                         to care for the child.</p>
                         <p><strong>Genres:</strong> <span id="movieGenres">Animation, Fairy Tale, Dark Fantasy, Drama</span></p>
@@ -544,11 +544,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo12.png" alt="Movie12 Poster"/>
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">Rango (2011)</h2>
+                    <h3 id="movieTitle">Rango (2011)</h3>
                     <p id="movieDescription">Rango is an ordinary chameleon who accidentally winds up in the town of Dirt, a 
                         lawless outpost in the Wild West in desperate need of a new sheriff.</p>
                         <p><strong>Genres:</strong> <span id="movieGenres">Animation Epic, Desert Adventure, Action, Quirky Comedy</span></p>
@@ -580,11 +580,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo13.png" alt="Movie13 Poster"/>
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">The sea Beast (2022)</h2>
+                    <h3 id="movieTitle">The sea Beast (2022)</h3>
                     <p id="movieDescription">When a young girl stows away on the ship of a legendary sea monster hunter, they launch an 
                         epic journey into uncharted waters - and make history to boot.</p>
                         <p><strong>Genres:</strong> <span id="movieGenres">Animation, Sea Adventure, Action, Comedy</span></p>
@@ -617,11 +617,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo14.png" alt="Movie14 Poster"/>
-                    <button class="play-btn"  onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn"  onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">Rio (2011)</h2>
+                    <h3 id="movieTitle">Rio (2011)</h3>
                     <p id="movieDescription">When Blu, a domesticated macaw from small-town Minnesota, meets the fiercely 
                         independent Jewel, he takes off on an adventure to Rio de Janeiro with the bird of his dreams.</p>
                         <p><strong>Genres:</strong> <span id="movieGenres">Animation, Adventure, Action, Family</span></p>
@@ -656,11 +656,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo15.png" alt="Movie15 Poster"/>
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">Ice Age: Continental Drift (2012)</h2>
+                    <h3 id="movieTitle">Ice Age: Continental Drift (2012)</h3>
                     <p id="movieDescription">Manny, Diego, and Sid embark upon another adventure after their continent is set adrift.
                          Using an iceberg as a ship, they encounter sea creatures and battle pirates as they explore a new world.</p>
                         <p><strong>Genres:</strong> <span id="movieGenres">Animation, Adventure, Comedy, Family</span></p>
@@ -694,11 +694,11 @@ const MovieSection = () => {
 
                 <div class="poster">
                     <img id="moviePoster" src="\src\assets\images\sectionpo16.png" alt="Movie16 Poster"/>
-                    <button class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</button>
+                    <buttons class="play-btn" onClick={(e) => playVideo(e.target)}>▶ Play</buttons>
                 </div>
 
                 <div class="Movie-detail">
-                    <h2 id="movieTitle">Turbo (2013)</h2>
+                    <h3 id="movieTitle">Turbo (2013)</h3>
                     <p id="movieDescription">A freak accident might just help an everyday garden snail achieve his biggest
                          dream: winning the Indy 500.</p>
                         <p><strong>Genres:</strong> <span id="movieGenres">Animation, Adventure, Motorsport, Sport</span></p>

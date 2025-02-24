@@ -14,9 +14,9 @@ const Aboutus = () => {
 
   return (
     <div className="container">
-      <h1 className="title">ABOUT DREAM ANIMATION</h1>
+      <h1 className="titled">ABOUT DREAM ANIMATION</h1>
       
-      <nav className="nav-menu">
+      <nav className="nav-menus">
         <a href="#" onClick={() => showSection('story')}>Story</a>
         <a href="#" onClick={() => showSection('iconic')}>Iconic</a>
         <a href="#" onClick={() => showSection('award')}>Award</a>

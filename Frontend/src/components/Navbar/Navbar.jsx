@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './navbar.css'; // Make sure the CSS file path is correct
+import './navbar.css'; // Ensure correct path
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
-import Aboutus from '../AboutUs/Aboutus';
+import logo from '../../assets/images/log.png'; // Import the image correctly
 
 const Navbar = () => {
     const [isDropdownActive, setDropdownActive] = useState(false);
@@ -13,12 +13,16 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-               <div className="search-container">
+            <div className='logo'>
+                <img src={logo} alt="logo" /> {/* Corrected tag */}
+            </div>
+            
+            <div className="search-container">
                 <form>
                     <input type="search" placeholder="Search here ..." />
-                    <FontAwesomeIcon icon={faSearch} className="fa" /> {/* Use FontAwesomeIcon for search */}
+                    <FontAwesomeIcon icon={faSearch} className="fa" />
                 </form>
-                </div>
+            </div>
 
             <ul>
                 <li><a href="#">Home</a></li>
@@ -26,16 +30,15 @@ const Navbar = () => {
                 <li><a href="#">About</a></li>
             </ul>
 
-            <div className={`profile-container ${isDropdownActive ? 'active' : ''}`}
-            id="profileIcon" 
-            onClick={toggleDropdown}
+            <div className={`profile-container ${isDropdownActive ? 'active' : ''}`} 
+                id="profileIcon" 
+                onClick={toggleDropdown}
             >
                 <FontAwesomeIcon icon={faUser} />
                 
                 {/* Dropdown Menu */}
                 {isDropdownActive && (
                     <div id="profileDropdown" className="dropdown">
-                        {/* <a href="#">Setting & Privacy</a> */}
                         <a href="#">Logout</a>
                     </div>
                 )}

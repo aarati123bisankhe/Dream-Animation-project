@@ -74,17 +74,11 @@ const AdminDashboard = () => {
     return (
         <div className="admin-dashboard">
             <div className="sidebar">
-                <h2>Admin Dashboard</h2>
+                <h5>Admin Dashboard</h5>
                 <ul>
                     <li>
-                        {/* <a
-                            href="#add-movie"
-                            onClick={() => setActiveSection('add-movie')}
-                        >
-                            Add Movie
-                        </a> */}
 
-<a
+                       <a
                             href="#add-movie"
                             onClick={(e) => {
                                 e.preventDefault(); // Prevent default behavior
@@ -188,7 +182,7 @@ const AdminDashboard = () => {
                  {/* Manage Movies Section */}
                  {activeSection === 'manage-movies' && (
                     <div className="manage-movies">
-                        <h2>Manage Movies</h2>
+                        <h6>Manage Movies</h6>
                         <table>
                             <thead>
                                 <tr>

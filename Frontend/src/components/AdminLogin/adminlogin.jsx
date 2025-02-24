@@ -1,8 +1,8 @@
 import React from 'react';
-import './login.css'; // Ensure you import the CSS file
+import './AdminLogin.css'; // Ensure you import the CSS file
 
-const Login = () => {
-    const SignupActive = () => {
+const Admin = () => {
+    const registerActive = () => {
         const wrapper = document.querySelector('.wrapper');
         wrapper.classList.toggle('active');
     };
@@ -23,13 +23,10 @@ const Login = () => {
                         <a href="#">Forgot Password?</a>
                     </div>
                     <button type="submit">Login</button>
-                    <div className="sign-link">
-                        <p>Don't have an account? <a href="#" onClick={SignupActive}>Sign Up</a></p>
-                    </div>
                 </form>
             </div>
         </div>
     );
 };
 
-export default Login;
+export default Admin;

@@ -102,6 +102,20 @@ body {
     margin-right: 45px; 
 }
 
+.logo {
+    margin-top: -150px;
+    margin-right: 631px;
+    height: 5px;
+}
+
+.logo img{
+    padding: 10px;
+    width: 220px;
+    height: auto;
+    justify-content: center;
+    
+}
+    
 .search-container form {
     position: relative;
     width: 35px;

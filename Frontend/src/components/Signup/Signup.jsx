@@ -35,22 +35,9 @@ const SignUp = () => {
           <p>Already have an account? <a href="#">
             <strong>Log In</strong></a></p>
         </div>
-        {/* <div className="input-container cta">
-          <label className="checkbox-container">
-            <input type="checkbox" />
-            <span className="checkmark"></span>
-            Sign up for email updates.
-          </label>
-        </div> */}
+  
         <button className="signup-btn" type="submit">Sign up</button>
-        <section className="copy legal">
-          <p>
-            <span className="small">
-              By continuing, you agree to accept our <br />
-              <a href="#">Privacy Policy</a> &amp; <a href="#">Terms of Service</a>.
-            </span>
-          </p>
-        </section>
+      
       </div>
     </div>
   );

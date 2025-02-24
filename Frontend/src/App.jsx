@@ -7,6 +7,7 @@ import Aboutus from "./components/AboutUs/Aboutus";
 import Home from "./components/Home page/Home";
 import MovieSection from "./components/MovieSection/MovieSection";
 import AdminDashboard from "./components/Admin Dashboard/Admin";
+import AdminLogin from "./components/AdminLogin/adminlogin";
 
 function App() {
   return (
@@ -17,6 +18,12 @@ function App() {
     {/* <Aboutus/> */}
     {/* <MovieSection/> */}
     <AdminDashboard/>
+    {/* <AdminLogin/> */}
+    {/* <Login/> */}
+    {/* <SignUp/> */}
+    {/* <RegistrationForm/> */}
+
+  
 
     </>
     );
