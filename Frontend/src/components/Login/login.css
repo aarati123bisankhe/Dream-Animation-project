@@ -4,12 +4,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/* .bodyLOG {
+} */
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100hv;
+    background-image: url("D:\Dream Animation Studio Project\Frontend\src\assets\images\bgLOG.png");
+
     background: #0e0d0d;
 }
 .wrapper{

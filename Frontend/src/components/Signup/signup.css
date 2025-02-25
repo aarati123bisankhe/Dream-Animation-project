@@ -56,15 +56,6 @@ body {
     color: #0b0b0b;
 }
 
-/* Login Link */
-/* .signup-container {
-    font-size: 0.6em ;
-    text-align: left;
-    margin-bottom: 20px;
-    margin: 20px;
-
-} */
-
 .signup-container {
     font-size: 0.9em;
     text-align: left;  /* Align text to the left */
@@ -74,18 +65,6 @@ body {
     margin-left: 10px;
 }
 
-/* .checkbox-container {
-    display: flex;
-    align-items: center; /
-    font-size: 0.9em;
-    color: #0f0d0d;
-    gap: 10px; 
-    justify-content: space-between; 
-    margin-top: 20px;
-   
-}
-
-
 .login-container p a {
     color: #4244ca;
     text-decoration: none;
@@ -94,13 +73,6 @@ body {
 .login-container p a:hover {
     text-decoration: underline;
 }
-
-/* Input Container */
-/* 
-.login-container p {
-    color: #0b0b0b;
-    text-align: start;
-} */
 
 .input-container {
     margin-bottom: 30px;
@@ -141,37 +113,6 @@ body {
     cursor: pointer;
 }
 
-/* Checkbox Container */
-/* .checkbox-container {
-    display: flex;
-    align-items: center;
-    font-size: 0.9em;
-    color: #0f0d0d;
-    margin-right: 10px;
-}
-
-.checkbox-container input {
-    margin-right: 10px;
-} */
- /* Checkbox Container */
-/* .checkbox-container {
-    display: flex;
-    align-items: center; /
-    font-size: 0.9em;
-    color: #0f0d0d;
-    gap: 10px; 
-    justify-content: space-between; 
-    margin-top: 20px;
-   
-}
-
-
-.checkbox-container input[type="checkbox"] {
-    width: 10px; 
-    height: 10px;
-    accent-color: #0b0b0b; 
-    margin: 0; 
-} */
 
 /* Button Styling */
 button.signup-btn {
@@ -187,10 +128,6 @@ button.signup-btn {
     cursor: pointer;
     margin: auto;
 }
-
-/* button.signup-btn:hover {
-    background:white
-} */
 
 /* Responsive Design */
 @media (max-width: 768px) {

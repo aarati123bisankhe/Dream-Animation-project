@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css'; // Ensure correct path
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
 import logo from '../../assets/images/log.png'; // Import the image correctly
@@ -10,6 +11,17 @@ const Navbar = () => {
     const toggleDropdown = () => {
         setDropdownActive(!isDropdownActive);
     };
+    const navigate = useNavigate(); // Initialize useNavigate
+
+  // Handle logout with confirmation
+  const handleLogout = () => {
+    const confirmLogout = window.confirm("Are you sure you want to log out?");
+    
+    if (confirmLogout) {
+      localStorage.removeItem("token"); // Remove token from localStorage
+      navigate("/"); // Redirect to login page
+    }
+  };
 
     return (
         <div className="navbar">
@@ -38,7 +50,7 @@ const Navbar = () => {
                 
                 {/* Dropdown Menu */}
                 {isDropdownActive && (
-                    <div id="profileDropdown" className="dropdown">
+                    <div id="profileDropdown" className="dropdown" onClick={handleLogout}>
                         <a href="#">Logout</a>
                     </div>
                 )}

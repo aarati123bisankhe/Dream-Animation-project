@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import './home.css';
 // import Navbar from '../Navbar/Navbar';
 import Navbar from '../Navbar/Navbar.jsx';
+import MovieSection from '../MovieSection/MovieSection.jsx';
+import Aboutus from '../AboutUs/Aboutus.jsx';
 
 const Home = () => {
   const toggleMovieDetails = (movieId) => {
@@ -110,6 +112,8 @@ const Home = () => {
     <>
 
     <Navbar/>
+    {/* <MovieSection/> */}
+    {/* <Aboutus/> */}
 
     <div className="slider">
         <div className="list">
