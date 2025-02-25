@@ -1,27 +1,24 @@
 const jwt = require('jsonwebtoken');
-const pool = require('../db/db');
 
-const authMiddleware = (roles) => async (req, res, next) => {
-    try {
-        const token = req.header('Authorization').replace('Bearer ', '');
-        const decoded = jwt.verify(token, 'your_jwt_secret');
+const authenticateToken = (req, res, next) => {
+  console.log('Request Headers:', req.headers); // Log all headers
+  console.log('Raw Authorization Header:', req.headers['authorization']); // Log the raw header
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
 
-        const userQuery = `
-            SELECT * FROM users
-            WHERE id = $1;
-        `;
-        const userResult = await pool.query(userQuery, [decoded.id]);
+  console.log('Token:', token); // Log the extracted token
 
-        const user = userResult.rows[0];
-        if (!user || !roles.includes(user.role)) {
-            throw new Error('Unauthorized access');
-        }
+  if (!token) {
+    return res.status(401).json({ message: 'Access denied. No token provided.' });
+  }
 
-        req.user = user;
-        next();
-    } catch (err) {
-        res.status(401).send({ error: 'Unauthorized access' });
+  jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
+    if (err) {
+      return res.status(403).json({ message: 'Invalid or expired token' });
     }
+    req.user = user;
+    next();
+  });
 };
 
-module.exports = authMiddleware;
+module.exports = authenticateToken;
