@@ -34,13 +34,14 @@ const AppContent = () => {
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={<Navigate to="/login" />} />
+
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/admin-login" element={<AdminLogin />} />
 
         {/* Protected Routes */}
         <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
-        <Route path="/movies" element={<ProtectedRoute><MovieSection /></ProtectedRoute>} />
+        <Route path="/movie" element={<ProtectedRoute><MovieSection /></ProtectedRoute>} />
         <Route path="/about" element={<ProtectedRoute><Aboutus /></ProtectedRoute>} />
         <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
 

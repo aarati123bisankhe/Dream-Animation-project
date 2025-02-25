@@ -23,7 +23,6 @@ body {
 
 /* Navbar Menu (Home, Movies, About) */
 .navbar ul {
-    
     list-style: none;
     margin: 0;
     padding: 0;
@@ -52,7 +51,7 @@ body {
 }
 
 .navbar a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(9, 10, 10);
 }
 
 .profile-container{
@@ -62,7 +61,6 @@ body {
     margin: 5px 0;
     
 }
-
 
 .dropdown {
     position: absolute;
@@ -103,14 +101,14 @@ body {
 }
 
 .logo {
-    margin-top: -150px;
-    margin-right: 619px;
+    margin-top: -140px;
+    margin-right: 652px;
     height: 5px;
 }
 
 .logo img{
     padding: 10px;
-    width: 220px;
+    width: 185px;
     height: auto;
     justify-content: center;
     
@@ -118,10 +116,10 @@ body {
     
 .search-container form {
     position: relative;
-    width: 35px;
+    width: 34px;
     height: 34px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 23px;
     border: 2px solid #8147f5;
     display: flex;
     align-items: center;

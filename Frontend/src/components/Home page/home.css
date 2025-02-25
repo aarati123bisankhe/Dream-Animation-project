@@ -1,15 +1,11 @@
 *{
     box-sizing: border-box;
-    font-family: sans-serif;
-    
+    font-family: sans-serif;    
 }
 
-
 body {
-    /* margin: 0;
-    padding: 0; */
     height: 100%;
-    background-color: rgb(12, 10, 10);
+    /* background-color: rgb(12, 10, 10); */
     
 }
 
@@ -48,11 +44,8 @@ video{
     width: 150%;
     height: 100%;
     object-fit: cover;
-    object-position: center; /* Centers the video */
-      /* video behind content */
-
+    object-position: center; 
 }
-
 
 .content{
     position: absolute;
@@ -107,13 +100,10 @@ buttonn{
     margin-left: 5px;
 }
 
-
 .buttons button:hover {
     background-color: rgb(161, 156, 219);
 }
 
-
-/* arrow */
 .arrows{
     position: absolute;
     top: 82%;
@@ -137,7 +127,6 @@ buttonn{
     transition: 0.5s;
 }
 
-   
 .arrows button:hover{
     background-color: #eee;
     color: #555;
@@ -171,7 +160,7 @@ buttonn{
 
 
 .thumbnail .item.zoomed {
-    transform: scale(1.1); /* Adjust the scale value as needed */
+    transform: scale(1.1); 
     transition: transform 0.1s ease;
     box-shadow: 0 0 25px rgba(234, 231, 231, 0.5), 0 0 25px rgba(247, 242, 242, 0.3); /*Blur border8*/
 }
@@ -254,7 +243,6 @@ buttonn{
     
 }
 
-
 .silder.next .thumbnail {
     animation: effectnext 0.5s linear 1 forwards;
 }
@@ -328,10 +316,10 @@ buttonn{
 }
 
 
-.movie-details {
+.movie-detail {
     display: none; /* Hidden by default */
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300%;
@@ -341,16 +329,61 @@ buttonn{
     padding: 5%;
     box-sizing: border-box;
     border-radius: 10px;
-    display: flex;
     flex-direction: row;
     gap: 15px;
     align-items: center;
     justify-content: center;
     margin-left: 450px;
     margin-top: 10px;
-    z-index: 10; /* Ensure it's above the thumbnails */
+    z-index: 10; 
 }
 
+/* movie 6 only */
+.movies-detail{
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300%;
+    max-width: 270%;  
+    background-color: rgb(237, 220, 198);
+    color: rgb(19, 17, 17);
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 450px;
+    margin-top: 10px;
+    z-index: 10; 
+
+}
+
+/* movie 2 only */
+.movie-detaill{
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300%;
+    max-width: 270%;  
+    background-color: rgb(237, 220, 198);
+    color: rgb(19, 17, 17);
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 450px;
+    margin-top: 10px;
+    z-index: 10; 
+}
 
 
 .movie-poster img {
@@ -364,16 +397,16 @@ buttonn{
 
 .movie-info {
     display: flex;
-    flex: 1; /* Take up remaining space */
+    flex: 1; 
     padding: 10px;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 290px;
+    margin-top: 190px;
     gap: 10px;
 
 }
 
-.movie-title {
+.movie-titlea {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
@@ -398,13 +431,12 @@ buttonn{
 }
 
 .storyline {
-    /* font-size: 1.1rem; */
     display: flex;
     font-size: 1.1rem;
     margin-bottom: 10px;
     line-height: 1.4;
     max-height: 100px;
-    overflow: hidden; /* Prevents excessive text from stretching the box */
+    overflow: hidden; 
 }
 
 h2  {
@@ -439,6 +471,20 @@ h2  {
     font-size: 0.9rem;
     color: #272020;
 }
+
+
+.closed {
+    position: absolute;
+    top: -5px;
+    right: -1px; /* Moves button to the right */
+    color: rgb(12, 11, 11);
+    border: none;
+    font-size: 23px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
 
 
 

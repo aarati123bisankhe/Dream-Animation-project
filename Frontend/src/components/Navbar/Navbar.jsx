@@ -37,9 +37,14 @@ const Navbar = () => {
             </div>
 
             <ul>
-                <li><a href="#">Home</a></li>
+                {/* <li><a href="#">Home</a></li>
                 <li><a href="#">Movie</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">About</a></li> */}
+                 <ul>
+    <li><a onClick={() => navigate("/home")}>Home</a></li>
+    <li><a onClick={() => navigate("/movie")}>Movie</a></li>
+    <li><a onClick={() => navigate("/about")}>About</a></li>
+  </ul>
             </ul>
 
             <div className={`profile-container ${isDropdownActive ? 'active' : ''}`} 

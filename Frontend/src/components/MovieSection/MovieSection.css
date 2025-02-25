@@ -1,29 +1,25 @@
-body{
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #fff !important;
-
+.body{
+    background: white;
 }
 
 h1 {
-    color: #142175;
+    color: #10184c;
     font-weight: bold;
     text-align: left; 
-    margin-left: -130%; 
-    margin-top: -340px;
-    
-    
+    margin-left: -284%; 
+    margin-top: -260px;  
+    font-size: 28px;
 }
 
 .slider-container {
     position: absolute;
     width: 50%;
     margin: auto;
-    margin-top: 25px;
-    margin-left: -36%;
+    margin-top: 20px;
+    margin-left: -42.6%;
 
 }
-
+ 
 .movie-slider {
     display: flex;
     width: 100%;
@@ -52,14 +48,11 @@ h1 {
     border: 2px solid rgba(0, 0, 0, 0.5); /* Add a border to indicate the click */
 }
 
-
-
-
 /* movie video and the detailed */
 .modal {
     display: none;
     position: fixed;
-    margin-top: -50px;
+    margin-top: -95px;
     left: 18px;
     width: 97%;
     height: 97%;

@@ -24,6 +24,11 @@ const Home = () => {
     }
   };
 
+
+  const closeMovieDetail = (movieId) => {
+    document.getElementById(movieId).style.display = "none";
+  };
+
   const moveSlider = (direction) => {
     const slider = document.querySelector(".slider");
     const sliderList = document.querySelector(".list");
@@ -135,12 +140,13 @@ const Home = () => {
               <buttonn onClick={() => toggleMovieDetails('movie1')}>SEE MORE</buttonn>
             </div>
             {/* Movie 1 Details */}
-            <div id="movie1" className="movie-details">
+            <div id="movie1" className="movie-detail">
+            <span className="closed" onClick={() => closeMovieDetail("movie1")}>&times;</span>
               <div className="movie-poster">
                 <img src="\src\assets\images\poster1.jpg" alt="Movie 1 poster" />
               </div>
               <div className="movie-info">
-                <h1 className="movie-title">The Bad Guys 2</h1>
+                <h1 className="movie-titlea">The Bad Guys 2</h1>
                 <div className="genre-tags">
                   <span>Animation</span>
                   <span>Comedy</span>
@@ -200,12 +206,13 @@ const Home = () => {
               <buttonn onClick={() => toggleMovieDetails('movie2')}>SEE MORE</buttonn>
             </div>
             {/* Movie 2 Details */}
-            <div id="movie2" className="movie-details">
+            <div id="movie2" className="movie-detaill">
+            <span className="closed" onClick={() => closeMovieDetail("movie2")}>&times;</span>
               <div className="movie-poster">
                 <img src="\src\assets\images\poster2.png" alt="Movie 2 poster" />
               </div>
               <div className="movie-info">
-                <h1 className="movie-title">How to Train Your Dragon</h1>
+                <h1 className="movie-titlea">How to Train Your Dragon</h1>
                 <div className="genre-tags">
                   <span>Action</span>
                   <span>Drama</span>
@@ -266,12 +273,13 @@ const Home = () => {
               <buttonn onClick={() => toggleMovieDetails('movie3')}>SEE MORE</buttonn>
             </div>
             {/* Movie 3 Details */}
-            <div id="movie3" className="movie-details">
+            <div id="movie3" className="movie-detail">
+            <span className="closed" onClick={() => closeMovieDetail("movie3")}>&times;</span>
               <div className="movie-poster">
                 <img src="\src\assets\images\poster3.png" alt="Movie 3 poster" />
               </div>
               <div className="movie-info">
-                <h1 className="movie-title">Elio</h1>
+                <h1 className="movie-titlea">Elio</h1>
                 <div className="genre-tags">
                   <span>Alien invasion</span>
                   <span>Space Sci-Fi</span>
@@ -331,12 +339,13 @@ const Home = () => {
               <buttonn onClick={() => toggleMovieDetails('movie4')}>SEE MORE</buttonn>
             </div>
             {/* Movie 4 Details */}
-            <div id="movie4" className="movie-details">
+            <div id="movie4" className="movie-detail">
+            <span className="closed" onClick={() => closeMovieDetail("movie4")}>&times;</span>
               <div className="movie-poster">
                 <img src="\src\assets\images\poster4.png" alt="Movie 4 poster" />
               </div>
               <div className="movie-info">
-                <h1 className="movie-title">Dog Man</h1>
+                <h1 className="movie-titlea">Dog Man</h1>
                 <div className="genre-tags">
                   <span>crime</span>
                   <span>SuperHero</span>
@@ -398,12 +407,13 @@ const Home = () => {
               <buttonn onClick={() => toggleMovieDetails('movie5')}>SEE MORE</buttonn>
             </div>
             {/* Movie 5 Details */}
-            <div id="movie5" className="movie-details">
+            <div id="movie5" className="movie-detail">
+            <span className="closed" onClick={() => closeMovieDetail("movie5")}>&times;</span>
               <div className="movie-poster">
                 <img src="\src\assets\images\poster5.png" alt="Movie 5 poster" />
               </div>
               <div className="movie-info">
-                <h1 className="movie-title">Kayara</h1>
+                <h1 className="movie-titlea">Kayara</h1>
                 <div className="genre-tags">
                   <span>Action</span>
                   <span>Family</span>
@@ -454,12 +464,13 @@ const Home = () => {
               <buttonn onClick={() => toggleMovieDetails('movie6')}>SEE MORE</buttonn>
             </div>
             {/* Movie 6 Details */}
-            <div id="movie6" className="movie-details">
+            <div id="movie6" className="movies-detail">
+            <span className="closed" onClick={() => closeMovieDetail("movie6")}>&times;</span>
               <div className="movie-poster">
                 <img src="\src\assets\images\poster6.png" alt="Movie 6 poster" />
               </div>
               <div className="movie-info">
-                <h1 className="movie-title">The Witcher: Sirens of the Deep</h1>
+                <h1 className="movie-titlea">The Witcher: Sirens of the Deep</h1>
                 <div className="genre-tags">
                   <span>Anime</span>
                   <span>Mystery</span>
