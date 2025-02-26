@@ -1,5 +1,5 @@
 import React from 'react';
-import './AdminLogin.css'; // Ensure you import the CSS file
+// import './AdminLogin.css'; // Ensure you import the CSS file
 
 const Admin = () => {
     const registerActive = () => {

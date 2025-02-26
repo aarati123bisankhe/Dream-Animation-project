@@ -3,9 +3,9 @@
     font-family: sans-serif;    
 }
 
-body {
+.bb {
     height: 100%;
-    /* background-color: rgb(12, 10, 10); */
+    background-color: rgb(12, 10, 10) !important;
     
 }
 

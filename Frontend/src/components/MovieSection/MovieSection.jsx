@@ -86,7 +86,8 @@ const MovieSection = () => {
       }, []);
 
   return (
-    <div>
+    <>
+        <div className='movie_container'>
       <h1>Movie Section</h1>
 
       <div className="slider-container">
@@ -721,10 +722,9 @@ const MovieSection = () => {
 
 
       
-
-
-
     </div>
+    </>
+
   );
 };
 

@@ -1,5 +1,11 @@
-.body{
-    background: white;
+.body {
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    color: #213547;
+    background-color: #fcf0f0;
 }
 
 h1 {

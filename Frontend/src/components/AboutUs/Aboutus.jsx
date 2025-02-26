@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './aboutus.css';
+import './about_us.css';
 
 const Aboutus = () => {
   const [activeSection, setActiveSection] = useState('story');

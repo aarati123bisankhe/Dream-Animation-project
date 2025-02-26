@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import './home.css';
+
 // import Navbar from '../Navbar/Navbar';
 import Navbar from '../Navbar/Navbar.jsx';
 import MovieSection from '../MovieSection/MovieSection.jsx';
 import Aboutus from '../AboutUs/Aboutus.jsx';
+import '../Home page/Home.css';
 
 const Home = () => {
   const toggleMovieDetails = (movieId) => {
@@ -115,10 +116,9 @@ const Home = () => {
 
   return (
     <>
-
+  <div className='bb'>
     <Navbar/>
-    {/* <MovieSection/> */}
-    {/* <Aboutus/> */}
+   
 
     <div className="slider">
         <div className="list">
@@ -544,6 +544,7 @@ const Home = () => {
           <img src="\src\assets\images\image6.png" alt="Thumbnail 6" />
         </div>
       </div>
+    </div>
     </div>
     </>
   );
