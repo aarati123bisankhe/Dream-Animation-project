@@ -1,6 +1,6 @@
 const { Sequelize } = require("sequelize");
 
-const sequelize = new Sequelize('dream_animation_studio_db', 'postgres', 'admin123',{
+const sequelize = new Sequelize('dream_animation_studio_backend', 'postgres', '1234567',{
 
     host: 'localhost',
     dialect: 'postgres',

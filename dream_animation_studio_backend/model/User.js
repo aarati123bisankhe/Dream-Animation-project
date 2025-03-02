@@ -1,41 +1,34 @@
 const { DataTypes } = require("sequelize");
+const sequelize = require("../database/db");
 
-module.exports = (sequelize) => {
-  const User = sequelize.define(
-    "User",
-    {
-      id: {
+const User = sequelize.define("User", {
+    id: {  // Change from "user_id" to "id" to match your DB schema
         type: DataTypes.INTEGER,
-        autoIncrement: true,
         primaryKey: true,
-      },
-      name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
-        validate: {
-          isEmail: true,
-        },
-      },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      role: {
-        type: DataTypes.ENUM("admin", "user"),
-        defaultValue: "user",
-        allowNull: false,
-      },
+        autoIncrement: true,
+        allowNull: false
     },
-    {
-      tableName: "users",
-      timestamps: true, // Adds createdAt and updatedAt fields
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    role: {
+        type: DataTypes.STRING,
+        defaultValue: "user"
     }
-  );
+}, {
+    timestamps: true,
+    createdAt: "created_at",  // Match your database column names
+    updatedAt: "updated_at"
+});
 
-  return User;
-};
+module.exports = User;
