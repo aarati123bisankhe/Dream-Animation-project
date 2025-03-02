@@ -3,36 +3,34 @@ import { useNavigate } from 'react-router-dom';
 import './login.css';
 
 const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/user/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+      const response = await fetch("http://localhost:5000/api/user/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
 
       const data = await response.json();
-
       if (response.ok) {
-        alert(data.message);
-        localStorage.setItem('token', data.token); // Save token
-        navigate('/home'); // Redirect to Home
+        localStorage.setItem("token", data.token);
+        alert("Login Successful!");
+        navigate("/home");
       } else {
-        alert(data.message);
+        alert(data.error);
       }
     } catch (error) {
-      console.error('Error during login:', error);
-      alert('Something went wrong. Please try again.');
+      alert("Something went wrong!");
     }
   };
+
+  
 
   return (
     <div className="wrapper">

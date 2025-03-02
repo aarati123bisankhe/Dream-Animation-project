@@ -21,7 +21,7 @@ const MovieSection = () => {
         "Movie16": { detailId: "movie16", videoSrc: "/src/assets/Video/section16.mp4" }
     
     };
-    
+
     const openMovieDetail = (img) => {
         const movieKey = img.alt;
         if (movies[movieKey]) {
