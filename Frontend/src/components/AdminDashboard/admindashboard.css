@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cbb6b6;
+}
+
+/* Admin Dashboard Layout */
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: rgb(98, 7, 39);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    margin-left: -36%;
+    position: relative;
+
+}
+
+.sidebar h5 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+.main-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Add Movie Form Styles */
+.add-movie-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-movie-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 300px;
+    color: #405403;
+    margin-left: -375px;
+}
+
+.add-movie-form div {
+    margin-bottom: 15px;
+}
+
+.add-movie-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-movie-form input,
+.add-movie-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #310b9a;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.add-movie-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.add-movie-form input[type="file"] {
+    padding: 5px;
+}
+
+.add-movie-form button {
+    width: 80%;
+    padding: 20px;
+    background-color: #1c3a5b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 50px;
+    
+}
+
+.add-movie-form button:hover {
+    background-color: #81b5ec;
+}
+
+
+
+
+
+/* Manage Movies Section */
+
+
+.manage-movies {
+    margin-top: 400px; /* Reduce from 400px */
+    position: fixed;
+    margin-left: 20px;
+    min-width: 900px;
+}
+
+
+.manage-movies h6 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #161c84;
+    margin-left: -720px;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #155070;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #4d6067;
+}
+
