@@ -8,6 +8,10 @@ import MovieSection from "./components/MovieSection/MovieSection";
 import Aboutus from "./components/AboutUs/Aboutus";
 import Navbar from "./components/Navbar/Navbar";
 
+// import AdminLogin from "./AdminLogin";
+// import AdminDashboard from "./AdminDashboard";
+// import PrivateRoute from "./PrivateRoute";
+
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
   const token = localStorage.getItem("token"); 
@@ -37,6 +41,16 @@ const AppContent = () => {
         <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
         <Route path="/movie" element={<ProtectedRoute><MovieSection /></ProtectedRoute>} />
         <Route path="/about" element={<ProtectedRoute><Aboutus /></ProtectedRoute>} />
+
+
+
+        {/* <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/dashboard" element={
+          <PrivateRoute>
+            <AdminDashboard />
+          </PrivateRoute>
+        } /> */}
+
 
         {/* Redirect unknown routes */}
         <Route path="*" element={<Navigate to="/login" />} />

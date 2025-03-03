@@ -1,11 +1,33 @@
 import React from 'react';
-// import './AdminLogin.css'; // Ensure you import the CSS file
+import './adminLogin.css'; // Ensure you import the CSS file
 
-const Admin = () => {
-    const registerActive = () => {
-        const wrapper = document.querySelector('.wrapper');
-        wrapper.classList.toggle('active');
-    };
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
+const AdminLogin = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post("http://localhost:5000/api/admin/login", {
+        email,
+        password,
+      });
+
+      // Store token in localStorage
+      localStorage.setItem("adminToken", res.data.token);
+
+      // Redirect to dashboard
+      navigate("/admin/dashboard");
+    } catch (err) {
+      setError(err.response?.data?.error || "Login failed");
+    }
+  };
+
 
     return (
         <div className="wrapper">
@@ -29,4 +51,4 @@ const Admin = () => {
     );
 };
 
-export default Admin;
+export default AdminLogin;
