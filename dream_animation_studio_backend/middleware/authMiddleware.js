@@ -18,7 +18,17 @@ const protect = (req, res, next) => {
   }
 };
 
-module.exports = protect;
+// Middleware to protect admin routes only
+const adminProtect = (req, res, next) => {
+  if (!req.user || !req.user.isAdmin) {
+    return res.status(403).json({ error: 'Access denied! Admins only.' });
+  }
+
+  next();
+};
+
+// module.exports = protect;
+module.exports = { protect, adminProtect };
 
 
 
